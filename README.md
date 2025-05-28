@@ -10,7 +10,7 @@ A plugin for Hapi.js that integrates Zod for request validation. This plugin sim
 ## Installation
 
 ```bash
-npm install hapi-zod zod @hapi/hapi @hapi/boom zod-validation-error
+npm install hapi-zod
 ```
 
 ## Usage
