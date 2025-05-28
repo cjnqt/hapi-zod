@@ -1,0 +1,45 @@
+{
+  "name": "hapi-zod",
+  "version": "1.0.0",
+  "description": "Hapi Zod validation plugin",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "test": "npm run test",
+    "changelog": "auto-changelog --template ./changelog-template.hbs --output CHANGELOG.md --unreleased"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balaji8385/hapi-zod.git"
+  },
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "hapi",
+    "zod",
+    "hapi-validation",
+    "zod-validator",
+    "hapi-plugin",
+    "plugin"
+  ],
+  "author": "Balaji Lakshmi Narayanan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/balaji8385/hapi-zod/issues"
+  },
+  "homepage": "https://github.com/balaji8385/hapi-zod#readme",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@hapi/hapi": "^21.4.0",
+    "auto-changelog": "^2.5.0",
+    "typescript": "^5.8.3",
+    "zod": "^3.25.32",
+    "zod-validation-error": "^3.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.23"
+  }
+}
