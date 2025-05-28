@@ -12,6 +12,8 @@ const ZodValidatorPlugin: Plugin<null> = {
         payload?: ZodSchema<any>,
         query?: ZodSchema<any>,
         params?: ZodSchema<any>,
+        headers?: ZodSchema<any>,
+        state?: ZodSchema<any>,
       };
 
       try {
@@ -24,6 +26,12 @@ const ZodValidatorPlugin: Plugin<null> = {
         }
         if (routeValidation?.params) {
           Object.defineProperty(request, 'params', { value: routeValidation.params.parse(request.params), writable: false });
+        }
+        if (routeValidation?.headers) {
+          Object.defineProperty(request, 'headers', { value: routeValidation.headers.parse(request.headers), writable: false });
+        }
+        if (routeValidation?.state) {
+          Object.defineProperty(request, 'state', { value: routeValidation.state.parse(request.state), writable: false });
         }
         return h.continue;
       } catch (err) {

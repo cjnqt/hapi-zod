@@ -8,6 +8,7 @@ declare module '@hapi/hapi' {
           query?: ZodSchema;
           params?: ZodSchema;
           headers?: ZodSchema;
+          state?: ZodSchema;
         };
     }
 }

@@ -8,7 +8,6 @@
     "build": "tsc",
     "test": "npm run test",
     "changelog": "auto-changelog --template ./changelog-template.hbs --output CHANGELOG.md --unreleased",
-    "prepublishOnly": "npm run build",
     "publish": "npm publish --access public",
     "postpublish": "echo 'Published version $npm_package_version'",
     "version": "echo \"Bumping to $npm_package_version\"",
