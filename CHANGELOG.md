@@ -7,7 +7,15 @@ Repository:
 All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.0.1...HEAD)
+## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.0.2...HEAD)
+
+## [v1.0.2](https://github.com/balaji8385/hapi-zod/compare/v1.0.1...v1.0.2) – 2025-05-28
+
+### Commits
+
+- [ [`c4a0b8e`](/commit/c4a0b8e2c9516809386a37c4e408a3f515d404d3) ] chore: update changelog by Balaji L Narayanan <<lbalaji@live.com>>
+- [ [`42940dd`](/commit/42940dd0014eeebf6e6668ae1778996b4b876bd2) ] version 1.0.2 by Balaji L Narayanan <<lbalaji@live.com>>
+- [ [`703d7a5`](/commit/703d7a509671b7b844b14cae9e62217448589220) ] version 1.0.2 by Balaji L Narayanan <<lbalaji@live.com>>
 
 ## v1.0.1 – 2025-05-28
 
