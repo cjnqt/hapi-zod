@@ -57,7 +57,7 @@ start();
 ## Collaborators
 
 - **Balaji L Narayanan**: [lbalaji8385@gmail.com](mailto:lbalaji8385@gmail.com)
-- **Rajesh Sha**: [shahrajesh2113@yahoo.com](mailto:shahrajesh2113@yahoo.com)
+- **Rajesh Shah**: [shahrajesh2113@yahoo.com](mailto:shahrajesh2113@yahoo.com)
 
 ## Contributing
 
