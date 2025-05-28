@@ -18,20 +18,19 @@ const ZodValidatorPlugin: Plugin<null> = {
 
       try {
         if (routeValidation?.payload) {
-          const validatedPayload = routeValidation.payload.parse(request.payload);
-          Object.defineProperty(request, 'payload', { value: validatedPayload, writable: false });
+          routeValidation.payload.parse(request.payload);
         }
         if (routeValidation?.query) {
-          Object.defineProperty(request, 'query', { value: routeValidation.query.parse(request.query), writable: false });
+          routeValidation.query.parse(request.query);
         }
         if (routeValidation?.params) {
-          Object.defineProperty(request, 'params', { value: routeValidation.params.parse(request.params), writable: false });
+          routeValidation.params.parse(request.params);
         }
         if (routeValidation?.headers) {
-          Object.defineProperty(request, 'headers', { value: routeValidation.headers.parse(request.headers), writable: false });
+          routeValidation.headers.parse(request.headers);
         }
         if (routeValidation?.state) {
-          Object.defineProperty(request, 'state', { value: routeValidation.state.parse(request.state), writable: false });
+          routeValidation.state.parse(request.state);
         }
         return h.continue;
       } catch (err) {
