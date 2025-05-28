@@ -12,7 +12,7 @@
     "publish": "npm publish --access public",
     "postpublish": "echo 'Published version $npm_package_version'",
     "version": "echo \"Bumping to $npm_package_version\"",
-    "postversion": "npm run changelog && git add CHANGELOG.md && git commit -m 'chore: update changelog' && git push && git push --tags",
+    "postversion": "npm run changelog && git add CHANGELOG.md && git commit -m 'chore: update changelog' && git push && git push --tags"
   },
   "repository": {
     "type": "git",
