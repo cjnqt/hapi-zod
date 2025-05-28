@@ -1,6 +1,6 @@
 {
   "name": "hapi-zod",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Hapi Zod validation plugin",
   "main": "lib/index.js",
   "scripts": {
