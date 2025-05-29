@@ -142,9 +142,11 @@ server.route({
 const start = async () => {
   await server.register(HapiZodPlugin());
   await server.register(swaggerPlugin({
-    title: 'My API Docs',
-    version: '1.0.0',
-    description: 'API documentation generated from Zod schemas',
+    openapiSpec: {
+      title: 'My API Docs',
+      version: '1.0.0',
+      description: 'API documentation generated from Zod schemas',
+    },
     docsPath: '/docs',
     jsonPath: '/openapi.json',
     enableSwaggerUI: true,
@@ -160,9 +162,14 @@ start();
 
 The `swaggerPlugin` supports the following options:
 
-- **title**: The title of the API documentation. Default: `'Ops API Docs'`.
-- **version**: The version of the API. Default: `'1.0.0'`.
-- **description**: A description of the API. Default: `''`.
+- **openapiSpec**: The API documentation spec. Default: `{
+            openapi: '3.0.0',
+            info: {
+                title : 'Ops API Docs',
+                version: '1.0.0',
+                description: ''
+            },
+        }`.
 - **docsPath**: The path to access the Swagger UI. Default: `'/ops/docs'`.
 - **jsonPath**: The path to access the OpenAPI JSON schema. Default: `'/ops/openapi.json'`.
 - **enableSwaggerUI**: Whether to enable the Swagger UI. Default: `true`.

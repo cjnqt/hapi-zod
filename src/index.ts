@@ -63,3 +63,4 @@ export { swaggerPlugin } from "./swaggerplugin";
 export { ZodDocsOptions } from "./swaggerplugin";
 export type SwaggerPlugin = typeof swaggerPlugin;
 export { extendZodWithSwagger };
+export {OpenAPIObjectConfig} from '@asteasolutions/zod-to-openapi/dist/v3.0/openapi-generator';
