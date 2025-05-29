@@ -7,7 +7,14 @@ Repository:
 All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.2.0...HEAD)
+## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.3.0...HEAD)
+
+## [v1.3.0](https://github.com/balaji8385/hapi-zod/compare/v1.2.0...v1.3.0) – 2025-05-29
+
+### Commits
+
+- [ [`545a40a`](/commit/545a40a9436b66d2309068bb4bd9985cc962452f) ] Swagger feature added to support plugin by Balaji L Narayanan <<lbalaji@live.com>>
+- [ [`f103127`](/commit/f10312711ddb332946ff50a21209d83d7cc1972e) ] chore: update changelog by Balaji L Narayanan <<lbalaji@live.com>>
 
 ## [v1.2.0](https://github.com/balaji8385/hapi-zod/compare/v1.1.0...v1.2.0) – 2025-05-29
 
