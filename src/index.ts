@@ -5,7 +5,7 @@ import "./types";
 import { fromError } from "zod-validation-error";
 import { HapiZodOptions} from "./types";
 
-const ZodValidatorPlugin = (options: HapiZodOptions): Plugin<null> => {
+const ZodValidatorPlugin = (options: HapiZodOptions = {}): Plugin<null> => {
   const { boomError = true, parse = { payload: true, query: true, params: true, headers: true, state: true } } = options || {};
 
   return {
