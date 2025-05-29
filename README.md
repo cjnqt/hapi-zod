@@ -46,12 +46,59 @@ server.route({
 });
 
 const start = async () => {
-  await server.register(ZodValidatorPlugin);
+  await server.register(ZodValidatorPlugin());
   await server.start();
   console.log(`Server running on ${server.info.uri}`);
 };
 
 start();
+```
+
+## New Features
+
+### Options
+
+The plugin now supports the following additional options:
+
+- **boomError**: Customize the error response using Boom. Example:
+  ```typescript
+  const options = {
+    boomError: (err) => Boom.badRequest(err.message),
+  };
+  ```
+
+- **formatError**: Format the error before returning it. Example:
+  ```typescript
+  const options = {
+    formatError: (err) => ({ message: err.message, details: err.errors }),
+  };
+  ```
+
+- **parse**: Enable or disable parsing for specific parts of the request. Defaults to `true` for all parts. Example:
+  ```typescript
+  const options = {
+    parse: {
+      payload: true,
+      query: false,
+      params: true,
+    },
+  };
+  ```
+
+### Updated Usage
+
+```typescript
+const options = {
+  boomError: (err) => Boom.badRequest(err.message),
+  formatError: (err) => ({ message: err.message, details: err.errors }),
+  parse: {
+    payload: true,
+    query: false,
+    params: true,
+  },
+};
+
+await server.register(ZodValidatorPlugin(options));
 ```
 
 ## Collaborators

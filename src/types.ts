@@ -12,3 +12,16 @@ declare module '@hapi/hapi' {
         };
     }
 }
+
+
+export interface HapiZodOptions {
+  formatError?: (error: any) => string;
+  boomError?: boolean;
+  parse?: {
+    payload?: boolean;
+    query?: boolean;
+    params?: boolean;
+    headers?: boolean;
+    state?: boolean;
+  };
+}
