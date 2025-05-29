@@ -4,10 +4,11 @@ import { ZodSchema } from "zod";
 import "./types";
 import { fromError } from "zod-validation-error";
 import { HapiZodOptions} from "./types";
+import { swaggerPlugin, extendZodWithSwagger } from "./swaggerplugin";
 
 const ZodValidatorPlugin = (options: HapiZodOptions = {}): Plugin<null> => {
   const { boomError = true, parse = { payload: true, query: true, params: true, headers: true, state: true } } = options || {};
-
+  
   return {
     name: "ZodValidatorPlugin",
     register(server) {
@@ -58,3 +59,7 @@ const ZodValidatorPlugin = (options: HapiZodOptions = {}): Plugin<null> => {
 export default ZodValidatorPlugin;
 export { HapiZodOptions };
 export type ZodValidatorPlugin = typeof ZodValidatorPlugin;
+export { swaggerPlugin } from "./swaggerplugin";
+export { ZodDocsOptions } from "./swaggerplugin";
+export type SwaggerPlugin = typeof swaggerPlugin;
+export { extendZodWithSwagger };

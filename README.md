@@ -101,6 +101,73 @@ const options = {
 await server.register(ZodValidatorPlugin(options));
 ```
 
+## Swagger Plugin Usage
+
+The `hapi-zod` package also includes a Swagger plugin to generate OpenAPI documentation from Zod schemas.
+
+### Example
+
+```typescript
+import Hapi from '@hapi/hapi';
+import HapiZodPlugin, { swaggerPlugin, extendZodWithSwagger } from 'hapi-zod';
+import { z } from 'zod';
+
+extendZodWithSwagger(z);
+
+const server = Hapi.server({
+  port: 3000,
+  host: 'localhost',
+});
+
+const payloadSchema = z.object({
+  name: z.string(),
+  age: z.number(),
+});
+
+server.route({
+  method: 'POST',
+  path: '/example',
+  options: {
+    plugins: {
+      zod: {
+        payload: payloadSchema,
+      },
+    },
+  },
+  handler: (request, h) => {
+    return h.response({ message: 'Validation passed!' });
+  },
+});
+
+const start = async () => {
+  await server.register(HapiZodPlugin());
+  await server.register(swaggerPlugin({
+    title: 'My API Docs',
+    version: '1.0.0',
+    description: 'API documentation generated from Zod schemas',
+    docsPath: '/docs',
+    jsonPath: '/openapi.json',
+    enableSwaggerUI: true,
+  }));
+  await server.start();
+  console.log(`Server running on ${server.info.uri}`);
+};
+
+start();
+```
+
+### Swagger Plugin Options
+
+The `swaggerPlugin` supports the following options:
+
+- **title**: The title of the API documentation. Default: `'Ops API Docs'`.
+- **version**: The version of the API. Default: `'1.0.0'`.
+- **description**: A description of the API. Default: `''`.
+- **docsPath**: The path to access the Swagger UI. Default: `'/ops/docs'`.
+- **jsonPath**: The path to access the OpenAPI JSON schema. Default: `'/ops/openapi.json'`.
+- **enableSwaggerUI**: Whether to enable the Swagger UI. Default: `true`.
+- **defaultResponseSchema**: The default response schema for all routes. Default: `z.object({ success: z.boolean() })`.
+
 ## Collaborators
 
 - **Balaji L Narayanan**: [lbalaji8385@gmail.com](mailto:lbalaji8385@gmail.com)
