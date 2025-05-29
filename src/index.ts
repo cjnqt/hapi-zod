@@ -18,19 +18,24 @@ const ZodValidatorPlugin: Plugin<null> = {
 
       try {
         if (routeValidation?.payload) {
-          routeValidation.payload.parse(request.payload);
+          const parsedPayload = routeValidation.payload.parse(request.payload);
+          Object.assign(request, { payload: parsedPayload });
         }
         if (routeValidation?.query) {
-          routeValidation.query.parse(request.query);
+          const parsedQuery = routeValidation.query.parse(request.query);
+          Object.assign(request, { query: parsedQuery });
         }
         if (routeValidation?.params) {
-          routeValidation.params.parse(request.params);
+          const parsedParams = routeValidation.params.parse(request.params);
+          Object.assign(request, { params: parsedParams });
         }
         if (routeValidation?.headers) {
-          routeValidation.headers.parse(request.headers);
+          const parsedHeaders = routeValidation.headers.parse(request.headers);
+          Object.assign(request, { headers: parsedHeaders });
         }
         if (routeValidation?.state) {
-          routeValidation.state.parse(request.state);
+          const parsedState = routeValidation.state.parse(request.state);
+          Object.assign(request, { state: parsedState });
         }
         return h.continue;
       } catch (err) {
