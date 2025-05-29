@@ -7,7 +7,14 @@ Repository:
 All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.3.0...HEAD)
+## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.3.1...HEAD)
+
+## [v1.3.1](https://github.com/balaji8385/hapi-zod/compare/v1.3.0...v1.3.1) – 2025-05-29
+
+### Commits
+
+- [ [`81a66cd`](/commit/81a66cd21c52626a60c413a641fd8609d9d9628d) ] OpenAPI 3.0 feature added by Balaji L Narayanan <<lbalaji@live.com>>
+- [ [`8016415`](/commit/801641542b7a63e2c517eaf1c04a4c16ff7928b9) ] chore: update changelog by Balaji L Narayanan <<lbalaji@live.com>>
 
 ## [v1.3.0](https://github.com/balaji8385/hapi-zod/compare/v1.2.0...v1.3.0) – 2025-05-29
 
