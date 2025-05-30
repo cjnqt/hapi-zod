@@ -83,7 +83,7 @@ export const swaggerPlugin = (options: ZodDocsOptions = {}): Plugin<{}> => {
                 
 
                 registry.registerPath({
-                    method: method.toLowerCase() as 'get' | 'post' | 'put' | 'delete' | 'patch',
+                    method: method.toLowerCase() as 'get' | 'post' | 'put' | 'delete',
                     path,
                     summary,
                     tags,
