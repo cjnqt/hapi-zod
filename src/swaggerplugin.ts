@@ -45,9 +45,6 @@ export function swaggerPlugin(options: ZodDocsOptions = {}): Plugin<{}> {
             for (const route of routes) {
 
                 const zodConfig = route.settings?.plugins?.zod;
-                if (!zodConfig) {
-                    continue;
-                }
 
                 const method = route.method.toUpperCase();
                 const path = route.path;
@@ -67,7 +64,8 @@ export function swaggerPlugin(options: ZodDocsOptions = {}): Plugin<{}> {
                 };
 
                 const request: any = {};
-                if (zodConfig.payload) {
+
+                if (zodConfig?.payload) {
                     request.body = {
                         content: {
                             'application/json': {
@@ -76,10 +74,10 @@ export function swaggerPlugin(options: ZodDocsOptions = {}): Plugin<{}> {
                         }
                     };
                 }
-                if (zodConfig.query) {
+                if (zodConfig?.query) {
                     request.query = zodConfig.query
                 }
-                if (zodConfig.params) {
+                if (zodConfig?.params) {
                     request.params = zodConfig.params
                 }
                 
