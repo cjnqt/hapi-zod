@@ -7,9 +7,9 @@ Repository:
 All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.3.5...HEAD)
+## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.3.4...HEAD)
 
-## [v1.3.5](https://github.com/balaji8385/hapi-zod/compare/v1.3.3...v1.3.5) – 2025-05-30
+## [v1.3.4](https://github.com/balaji8385/hapi-zod/compare/v1.3.3...v1.3.4) – 2025-05-30
 
 ### Commits
 
