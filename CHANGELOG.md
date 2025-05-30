@@ -7,7 +7,14 @@ Repository:
 All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.3.2...HEAD)
+## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.3.3...HEAD)
+
+## [v1.3.3](https://github.com/balaji8385/hapi-zod/compare/v1.3.2...v1.3.3) – 2025-05-30
+
+### Commits
+
+- [ [`b68b8c2`](/commit/b68b8c2beab8bc2b1764141208ae70f73b88b634) ] Package alignment to reduce dep size by Balaji L Narayanan <<lbalaji@live.com>>
+- [ [`42fa04f`](/commit/42fa04f844b77f00807df9210289a26f943a70ba) ] chore: update changelog by Balaji L Narayanan <<lbalaji@live.com>>
 
 ## [v1.3.2](https://github.com/balaji8385/hapi-zod/compare/v1.3.1...v1.3.2) – 2025-05-30
 
