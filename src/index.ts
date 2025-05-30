@@ -8,7 +8,7 @@ import { swaggerPlugin, extendZodWithSwagger } from "./swaggerplugin";
 
 const ZodValidatorPlugin = (options: HapiZodOptions = {}): Plugin<null> => {
   const { boomError = true, parse = { payload: true, query: true, params: true, headers: true, state: true } } = options || {};
-  
+  const supportedProps = ['payload', 'query', 'params', 'headers', 'state'] as const;
   return {
     name: "ZodValidatorPlugin",
     register(server) {
@@ -22,25 +22,12 @@ const ZodValidatorPlugin = (options: HapiZodOptions = {}): Plugin<null> => {
         };
 
         try {
-          if (routeValidation?.payload && parse.payload) {
-            const parsedPayload = routeValidation.payload.parse(request.payload);
-            Object.assign(request, { payload: parsedPayload });
-          }
-          if (routeValidation?.query && parse.query) {
-            const parsedQuery = routeValidation.query.parse(request.query);
-            Object.assign(request, { query: parsedQuery });
-          }
-          if (routeValidation?.params && parse.params) {
-            const parsedParams = routeValidation.params.parse(request.params);
-            Object.assign(request, { params: parsedParams });
-          }
-          if (routeValidation?.headers && parse.headers) {
-            const parsedHeaders = routeValidation.headers.parse(request.headers);
-            Object.assign(request, { headers: parsedHeaders });
-          }
-          if (routeValidation?.state && parse.state) {
-            const parsedState = routeValidation.state.parse(request.state);
-            Object.assign(request, { state: parsedState });
+
+          for (const prop of supportedProps) {
+            if (routeValidation?.[prop] && parse[prop]) {
+              const parsedProp = routeValidation[prop].parse(request[prop]);
+              Object.assign(request, { [prop]: parsedProp });
+            }
           }
 
           return h.continue;

@@ -17,7 +17,7 @@ export interface ZodDocsOptions  {
 /**
  * Creates a Hapi plugin that generates OpenAPI docs from zod schemas
  */
-export function swaggerPlugin(options: ZodDocsOptions = {}): Plugin<{}> {
+export const swaggerPlugin = (options: ZodDocsOptions = {}): Plugin<{}> => {
     const {
         docsPath = '/ops/docs',
         jsonPath = '/ops/openapi.json',
@@ -83,7 +83,7 @@ export function swaggerPlugin(options: ZodDocsOptions = {}): Plugin<{}> {
                 
 
                 registry.registerPath({
-                    method: method.toLowerCase() as 'get' | 'post' | 'put' | 'delete',
+                    method: method.toLowerCase() as 'get' | 'post' | 'put' | 'delete' | 'patch',
                     path,
                     summary,
                     tags,
