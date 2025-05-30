@@ -8,7 +8,6 @@
     "build": "tsc",
     "test": "jest",
     "changelog": "auto-changelog --template ./changelog-template.hbs --output CHANGELOG.md --unreleased",
-    "publish": "npm publish --access public",
     "postpublish": "echo 'Published version $npm_package_version'",
     "version": "echo \"Bumping to $npm_package_version\"",
     "postversion": "npm run changelog && git add CHANGELOG.md && git commit -m 'chore: update changelog' && git push && git push --tags || git tag -f v$npm_package_version && git push -f --tags"
