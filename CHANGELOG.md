@@ -7,7 +7,23 @@ Repository:
 All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.3.3...HEAD)
+## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.3.5...HEAD)
+
+## [v1.3.5](https://github.com/balaji8385/hapi-zod/compare/v1.3.4...v1.3.5) – 2025-05-30
+
+### Commits
+
+- [ [`ec7111c`](/commit/ec7111c794af9c47ba6a7a1b0dd2895c605ec8d6) ] build by Balaji L Narayanan <<lbalaji@live.com>>
+- [ [`747e6e5`](/commit/747e6e5c42bca4b87efd5400175e3ec90366cdef) ] updated the deployment file by Balaji L Narayanan <<lbalaji@live.com>>
+- [ [`39bc671`](/commit/39bc671fbe8ddbf73226b25a5a9255075de91535) ] change in version by Balaji L Narayanan <<lbalaji@live.com>>
+
+## [v1.3.4](https://github.com/balaji8385/hapi-zod/compare/v1.3.3...v1.3.4) – 2025-05-30
+
+### Commits
+
+- [ [`9348329`](/commit/9348329deea45a3230fce3879dcfd3846a199b40) ] Create codeql.yml by Balaji Lakshmi Narayanan <<lbalaji@live.com>>
+- [ [`da40484`](/commit/da404843f1ad9de2e2908a90cfcc48cd5263688a) ] Create npm-publish.yml by Balaji Lakshmi Narayanan <<lbalaji@live.com>>
+- [ [`7def041`](/commit/7def04157e7d0b27de320678f7831ae493df9562) ] chore: update changelog by Balaji L Narayanan <<lbalaji@live.com>>
 
 ## [v1.3.3](https://github.com/balaji8385/hapi-zod/compare/v1.3.2...v1.3.3) – 2025-05-30
 
