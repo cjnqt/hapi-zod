@@ -7,7 +7,14 @@ Repository:
 All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.3.1...HEAD)
+## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.3.2...HEAD)
+
+## [v1.3.2](https://github.com/balaji8385/hapi-zod/compare/v1.3.1...v1.3.2) – 2025-05-30
+
+### Commits
+
+- [ [`697681b`](/commit/697681b2bc54fb9104f0210a4fb47f99bd02d100) ] Adding support all route options in hapi v17+ by Balaji L Narayanan <<lbalaji@live.com>>
+- [ [`2903f08`](/commit/2903f08a84c66326e436c6b2623a2d528ce82cda) ] chore: update changelog by Balaji L Narayanan <<lbalaji@live.com>>
 
 ## [v1.3.1](https://github.com/balaji8385/hapi-zod/compare/v1.3.0...v1.3.1) – 2025-05-29
 
