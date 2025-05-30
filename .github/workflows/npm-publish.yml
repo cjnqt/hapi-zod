@@ -26,6 +26,8 @@ jobs:
         with:
           node-version: 22
           registry-url: https://registry.npmjs.org/
+      - run: git config --local user.name "github-actions[bot]"
+      - run: git config --local user.email "balaji8385@users.noreply.github.com"
       - run: npm version patch
       - run: npm publish
         env:
