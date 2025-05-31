@@ -7,7 +7,14 @@ Repository:
 All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.3.5...HEAD)
+## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.3.6...HEAD)
+
+## [v1.3.6](https://github.com/balaji8385/hapi-zod/compare/v1.3.5...v1.3.6) – 2025-05-31
+
+### Commits
+
+- [ [`8490aaa`](/commit/8490aaa4ac4d3b02e4a9d062cd590c683d8b65d2) ] added boolean parsing from string by Balaji L Narayanan <<lbalaji@live.com>>
+- [ [`c091779`](/commit/c0917792f95b78fc39359e5d2ade4e203915ccef) ] chore: update changelog by Balaji L Narayanan <<lbalaji@live.com>>
 
 ## [v1.3.5](https://github.com/balaji8385/hapi-zod/compare/v1.3.4...v1.3.5) – 2025-05-30
 
