@@ -119,10 +119,9 @@ The `hapi-zod` package also includes a Swagger plugin to generate OpenAPI docume
 
 ```typescript
 import Hapi from '@hapi/hapi';
-import HapiZodPlugin, { swaggerPlugin, extendZodWithSwagger } from 'hapi-zod';
+import HapiZodPlugin, { swaggerPlugin } from 'hapi-zod';
 import { z } from 'zod';
 
-extendZodWithSwagger(z);
 
 const server = Hapi.server({
   port: 3000,

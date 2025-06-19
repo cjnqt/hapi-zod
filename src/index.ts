@@ -4,7 +4,7 @@ import { ZodType } from "zod/v4";
 import "./types";
 import { fromError } from "zod-validation-error";
 import { HapiZodOptions} from "./types";
-import { swaggerPlugin, extendZodWithSwagger } from "./swaggerplugin";
+import { swaggerPlugin } from "./swaggerplugin";
 import { normalizeBooleans } from "./utils";
 
 const ZodValidatorPlugin = (options: HapiZodOptions = {}): Plugin<null> => {
@@ -63,5 +63,3 @@ export type ZodValidatorPlugin = typeof ZodValidatorPlugin;
 export { swaggerPlugin } from "./swaggerplugin";
 export { ZodDocsOptions } from "./swaggerplugin";
 export type SwaggerPlugin = typeof swaggerPlugin;
-export { extendZodWithSwagger };
-export {OpenAPIObjectConfig} from '@asteasolutions/zod-to-openapi/dist/v3.0/openapi-generator';
