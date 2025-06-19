@@ -7,7 +7,14 @@ Repository:
 All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v2.0.0...HEAD)
+## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v2.1.0...HEAD)
+
+## [v2.1.0](https://github.com/balaji8385/hapi-zod/compare/v2.0.0...v2.1.0) – 2025-06-19
+
+### Commits
+
+- [ [`6471855`](/commit/64718558f0bc5559b4b959070ad53df4e14ee032) ] Removed 3rd party dep and add new utils for open api by Balaji Narayanan <<balaji.narayanan@lifeline.com>>
+- [ [`2a14f1b`](/commit/2a14f1b8d8db5c10d03d7d9eb61a3f142303bab1) ] chore: update changelog by Balaji Narayanan <<balaji.narayanan@lifeline.com>>
 
 ## [v2.0.0](https://github.com/balaji8385/hapi-zod/compare/v1.3.6...v2.0.0) – 2025-06-19
 
