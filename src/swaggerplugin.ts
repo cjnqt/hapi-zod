@@ -1,6 +1,6 @@
 import { Plugin } from '@hapi/hapi';
 import { OpenAPIRegistry, OpenApiGeneratorV3, extendZodWithOpenApi  } from '@asteasolutions/zod-to-openapi';
-import { z } from 'zod';
+import { z } from 'zod/v4';
 import {OpenAPIObjectConfig} from '@asteasolutions/zod-to-openapi/dist/v3.0/openapi-generator';
 import { SecuritySchemeObject } from 'openapi3-ts/oas30';
 extendZodWithOpenApi(z);

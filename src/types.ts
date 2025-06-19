@@ -1,5 +1,5 @@
-import { ZodTypeAny, ZodType } from 'zod';
-type ZodSchema = ZodTypeAny | ZodType<any, any, any> | any | null;
+import { ZodType } from 'zod/v4';
+type ZodSchema = ZodType<any, any> | undefined | null;
 
 declare module '@hapi/hapi' {
     interface PluginSpecificConfiguration {
@@ -24,4 +24,6 @@ export interface HapiZodOptions {
     headers?: boolean;
     state?: boolean;
   };
+
+  logger ?: (error: any) => void
 }

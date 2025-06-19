@@ -1,6 +1,6 @@
-import { Plugin } from "@hapi/hapi";
+import { Plugin, Request, ResponseToolkit } from "@hapi/hapi";
 import Boom from "@hapi/boom";
-import { ZodSchema } from "zod";
+import { ZodType } from "zod/v4";
 import "./types";
 import { fromError } from "zod-validation-error";
 import { HapiZodOptions} from "./types";
@@ -13,13 +13,13 @@ const ZodValidatorPlugin = (options: HapiZodOptions = {}): Plugin<null> => {
   return {
     name: "ZodValidatorPlugin",
     register(server) {
-      server.ext("onPreHandler", async (request, h) => {
+      server.ext("onPreHandler", async (request: Request, h: ResponseToolkit) => {
         const routeValidation = request.route.settings.plugins.zod as {
-          payload?: ZodSchema<any>;
-          query?: ZodSchema<any>;
-          params?: ZodSchema<any>;
-          headers?: ZodSchema<any>;
-          state?: ZodSchema<any>;
+          payload?: ZodType<any, any>;
+          query?: ZodType<any, any>;
+          params?: ZodType<any, any>;
+          headers?: ZodType<any, any>;
+          state?: ZodType<any, any>;
         };
 
         try {
@@ -42,6 +42,12 @@ const ZodValidatorPlugin = (options: HapiZodOptions = {}): Plugin<null> => {
         } catch (err) {
           const error = options.formatError ? options.formatError(err) : fromError(err).message;
           if(boomError) {
+            if(options.logger) {
+              options.logger(error);
+            }
+            else{
+              console.error(error);
+            }
             return Boom.badRequest(error);
           }
           throw new Error(error);

@@ -2,6 +2,16 @@
 
 A plugin for Hapi.js that integrates Zod for request validation. This plugin simplifies the validation of payload, query, and params using Zod schemas.
 
+## Version Compatibility
+
+- For **Zod v4**, use **hapi-zod v2.x.x**:
+  ```bash
+  npm install hapi-zod
+  ```
+- For **Zod v3**, use **hapi-zod v1.3.6**:
+  ```bash
+  npm install hapi-zod@1.3.6
+  ```
 ## Requirements
 
 - **Hapi.js**: Version 17 or higher
