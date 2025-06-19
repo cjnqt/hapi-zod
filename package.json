@@ -37,7 +37,7 @@
   "dependencies": {
     "@asteasolutions/zod-to-openapi": "^8.0.0-beta.4",
     "@hapi/boom": "^10.0.1",
-    "zod-validation-error": "^3.4.1"
+    "zod-validation-error": "^3.5.2"
   },
   "devDependencies": {
     "@hapi/hapi": "^21.4.0",
