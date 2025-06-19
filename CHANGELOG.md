@@ -7,7 +7,15 @@ Repository:
 All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v1.3.6...HEAD)
+## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v2.0.0...HEAD)
+
+## [v2.0.0](https://github.com/balaji8385/hapi-zod/compare/v1.3.6...v2.0.0) – 2025-06-19
+
+### Commits
+
+- [ [`8b7c98a`](/commit/8b7c98ad147395369ba6b60dc3d29b841242e8a3) ] Upgraded to Zod/v4 by Balaji Narayanan <<balaji.narayanan@lifeline.com>>
+- [ [`3086475`](/commit/30864759de5ba24b472a399c191a6c43ef54a3f2) ] updated zod validation plugin by Balaji Narayanan <<balaji.narayanan@lifeline.com>>
+- [ [`6183639`](/commit/6183639d4affac5b0aa4be5eb76563c095ac8c32) ] chore: update changelog by Balaji L Narayanan <<lbalaji@live.com>>
 
 ## [v1.3.6](https://github.com/balaji8385/hapi-zod/compare/v1.3.5...v1.3.6) – 2025-05-31
 
