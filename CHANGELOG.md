@@ -9,6 +9,12 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v2.1.1...HEAD)
 
+### Commits
+
+- [ [`c0bdea4`](/commit/c0bdea493266af5720aa8087e4927351d4100b29) ] chore: update changelog by Balaji Narayanan <<balaji.narayanan@lifeline.com>>
+- [ [`2fd9d48`](/commit/2fd9d48cbe53a2a10948c282bff6ad5bcb6ee6f2) ] version support by carepoint <<balaji.narayanan@lifeline.com>>
+- [ [`ba6ce3d`](/commit/ba6ce3daadccfcfbbb3a40c84753843a5789a59f) ] Update package-lock.json by Balaji Lakshmi Narayanan <<lbalaji@live.com>>
+
 ## [v2.1.1](https://github.com/balaji8385/hapi-zod/compare/v2.1.0...v2.1.1) – 2025-06-25
 
 ### Commits
