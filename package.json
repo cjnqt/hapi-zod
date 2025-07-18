@@ -1,6 +1,6 @@
 {
   "name": "hapi-zod",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "Hapi Zod validation plugin",
   "main": "lib/index.js",
   "scripts": {
@@ -34,8 +34,7 @@
     "url": "https://github.com/balaji8385/hapi-zod/issues"
   },
   "homepage": "https://github.com/balaji8385/hapi-zod#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^22.15.23",
