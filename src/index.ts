@@ -1,6 +1,6 @@
 import { Plugin, Request, ResponseToolkit } from "@hapi/hapi";
 import Boom from "@hapi/boom";
-import z, { ZodType } from "zod";
+import z, { ZodType } from "zod/v4";
 import "./types";
 import { HapiZodOptions} from "./types";
 import { swaggerPlugin } from "./swaggerplugin";

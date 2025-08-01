@@ -1,5 +1,5 @@
 import { Plugin } from '@hapi/hapi';
-import { z, ZodObject } from 'zod';
+import { z, ZodObject } from 'zod/v4';
 import { OpenAPIObject, SecuritySchemeObject } from 'openapi3-ts/oas30';
 import type { RequestBodyObject, SchemaObject } from 'openapi3-ts/oas30';
 export interface ZodDocsOptions {

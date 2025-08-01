@@ -1,4 +1,4 @@
-import { ZodType } from 'zod';
+import { ZodType } from 'zod/v4';
 type ZodSchema = ZodType<any, any> | undefined | null;
 
 declare module '@hapi/hapi' {
