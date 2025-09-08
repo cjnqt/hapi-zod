@@ -1,18 +1,10 @@
 import { Plugin, Request, ResponseToolkit } from "@hapi/hapi";
 import Boom from "@hapi/boom";
-import { ZodType } from "zod/v4";
+import z, { ZodType } from "zod/v4";
 import "./types";
-import { fromError, createErrorMap } from 'zod-validation-error/v4';
 import { HapiZodOptions} from "./types";
 import { swaggerPlugin } from "./swaggerplugin";
 import { normalizeBooleansAndNumbers } from "./utils";
-import { z } from "zod/v4";
-
-z.config({
-  customError: createErrorMap({
-    includePath: true,
-  }),
-});
 
 const ZodValidatorPlugin = (options: HapiZodOptions = {}): Plugin<null> => {
   const { boomError = true, parse = { payload: true, query: true, params: true, headers: true, state: true } } = options || {};
@@ -47,7 +39,7 @@ const ZodValidatorPlugin = (options: HapiZodOptions = {}): Plugin<null> => {
 
           return h.continue;
         } catch (err) {
-          const error = options.formatError ? options.formatError(err) : fromError(err).message;
+          const error = options.formatError ? options.formatError(err) : z.prettifyError(err);
           if(boomError) {
             if(options.logger) {
               options.logger(error);

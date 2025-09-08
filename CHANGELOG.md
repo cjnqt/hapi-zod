@@ -7,7 +7,28 @@ Repository:
 All notable changes to this project will be documented in this file.  
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v2.1.1...HEAD)
+## [Unreleased](https://github.com/balaji8385/hapi-zod/compare/v2.2.1...HEAD)
+
+## [v2.2.1](https://github.com/balaji8385/hapi-zod/compare/v2.2.0...v2.2.1) – 2025-08-01
+
+### Commits
+
+- [ [`95ff5ba`](/commit/95ff5ba88efa8a2e9e75b7fbe4ea07d2d23fcb89) ] chore: update changelog by Balaji Narayanan <<balaji.narayanan@lifeline.com>>
+- [ [`60a159b`](/commit/60a159b2a83daf30b734b2fcafcb2b2e86ae1c3d) ] update to use v4 by Balaji Narayanan <<balaji.narayanan@lifeline.com>>
+
+## [v2.2.0](https://github.com/balaji8385/hapi-zod/compare/v2.1.2...v2.2.0) – 2025-07-18
+
+### Commits
+
+- [ [`55ff911`](/commit/55ff9111c0e40f0522e5c90b46c832e4d01acbab) ] updated to zod v4 by Balaji Narayanan <<balaji.narayanan@lifeline.com>>
+
+## [v2.1.2](https://github.com/balaji8385/hapi-zod/compare/v2.1.1...v2.1.2) – 2025-07-12
+
+### Commits
+
+- [ [`c0bdea4`](/commit/c0bdea493266af5720aa8087e4927351d4100b29) ] chore: update changelog by Balaji Narayanan <<balaji.narayanan@lifeline.com>>
+- [ [`f027090`](/commit/f0270904e1844f93e9dab02adbf0499cbce46dbe) ] Update CHANGELOG.md by Balaji Lakshmi Narayanan <<lbalaji@live.com>>
+- [ [`b66117d`](/commit/b66117d5d79c9745408bcd54006467772fd06b7d) ] Update package-lock.json by Balaji Lakshmi Narayanan <<lbalaji@live.com>>
 
 ## [v2.1.1](https://github.com/balaji8385/hapi-zod/compare/v2.1.0...v2.1.1) – 2025-06-25
 
