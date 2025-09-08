@@ -5,7 +5,7 @@ import "./types";
 import { fromError, createErrorMap } from 'zod-validation-error/v4';
 import { HapiZodOptions} from "./types";
 import { swaggerPlugin } from "./swaggerplugin";
-import { normalizeBooleans } from "./utils";
+import { normalizeBooleansAndNumbers } from "./utils";
 import { z } from "zod/v4";
 
 z.config({
@@ -35,7 +35,7 @@ const ZodValidatorPlugin = (options: HapiZodOptions = {}): Plugin<null> => {
           for (const prop of supportedProps) {
             if (routeValidation?.[prop] && parse[prop]) {
               if(prop === 'query'){;
-                const parsedProp = routeValidation[prop].parse(normalizeBooleans(request[prop]));
+                const parsedProp = routeValidation[prop].parse(normalizeBooleansAndNumbers(request[prop]));
                 Object.assign(request, { [prop]: parsedProp });
               }
               else{
